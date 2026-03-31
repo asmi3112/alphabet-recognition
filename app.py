@@ -1,12 +1,12 @@
-import streamlit as st
-from streamlit_drawable_canvas import st_canvas
+import streamlit as st # type: ignore
+from streamlit_drawable_canvas import st_canvas # type: ignore
 import numpy as np
-import cv2
+import cv2 # type: ignore
 from tensorflow.keras.models import load_model # type: ignore
 
-model = load_model("alphabet_model.keras")
+model = load_model("alphabet_model.h5")
 # Load model
-model.save("alphabet_model.keras")
+
 
 st.title("✍️ Handwritten Alphabet Recognition")
 
